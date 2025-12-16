@@ -1,0 +1,55 @@
+name: weather_application
+description: A Flutter weather application with real-time forecasts and location services.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.7.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  intl: ^0.17.0
+  # HTTP and API Handling
+  http: ^1.2.0
+
+  # Location Services
+  geolocator: ^9.0.2
+
+  # Animations
+  lottie: ^2.6.0
+
+  # State Management
+  provider: ^6.0.5
+
+  # Local Storage
+  shared_preferences: ^2.2.2
+  charts_flutter: ^0.12.0
+
+  # Optional (uncomment if needed)
+  # flutter_local_notifications: ^16.1.2  # For weather alerts
+  # charts_flutter: ^0.12.0             # For detailed forecast charts
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    # Weather Animations
+    - assets/sunny.json
+    - assets/rain.json
+    - assets/cloudy.json
+    - assets/snow.json
+    - assets/summer.json
+    - assets/winter.json
+    - assets/rainy.json
+    - assets/cloudy_day.json
+
+    # Background Images
+    - assets/weather_bg.jpeg
